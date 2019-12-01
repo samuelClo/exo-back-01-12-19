@@ -1,6 +1,4 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
-
 namespace App\Models;
 use Carbon\Carbon;
 class Article
@@ -32,5 +30,3 @@ class Article
         return new Carbon($this->created_at);
     }
 }
-
-

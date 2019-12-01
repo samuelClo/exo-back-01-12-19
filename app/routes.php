@@ -13,10 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET')
 {
     if($_SERVER['REQUEST_URI'] == '/projet-perso/procedural/public/')
     {
-        $homeController = new  HomeController($db);
-        $homeController->index();
-        var_dump($homeController) ;
-       /* return (new HomeController($db))->index();*/
+        return (new HomeController($db))->index();
     }
     elseif ($_SERVER['REQUEST_URI'] == '/articles')
     {

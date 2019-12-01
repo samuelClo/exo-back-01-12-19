@@ -3,6 +3,7 @@
 namespace App\controllers;
 use PDO;
 use App\Models\Article;
+use Carbon\Carbon;
 
 class HomeController
 {
@@ -21,6 +22,6 @@ class HomeController
             $articlesObject[] = new Article($article->id,$article->created_at,$article->title,$article->content);
         }
 
-        require __DIR__ . '/../../views/index.php';
+        require __DIR__ . '/../views/index.php';
     }
 }
